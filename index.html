@@ -8,68 +8,25 @@
     <!-- Meta Tags SEO -->
     <meta name="description" content="Générez des revenus complémentaires en ligne : gaming rémunéré, cashback intelligent, paris sportifs, banques en ligne et études rémunérées. Bot de trading crypto automatisé.">
     <meta name="keywords" content="revenus complémentaires, cashback, gaming rémunéré, paris sportifs, bot trading crypto, études rémunérées">
-    <meta name="author" content="Plateforme Revenus">
-    
-    <!-- Open Graph Tags (Facebook, LinkedIn) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://money-money-ruddy.vercel.app/">
-    <meta property="og:title" content="💰 Plateforme de Revenus Complémentaires - Gagnez jusqu'à 850€/mois">
-    <meta property="og:description" content="🎮 Gaming rémunéré | 💳 Cashback intelligent | 🤖 Bot Trading Crypto | 📊 Études rémunérées. Plus de 5 sources de revenus en une seule plateforme !">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&h=630&fit=crop">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Plateforme Revenus">
-    <meta property="og:locale" content="fr_FR">
-    
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://money-money-ruddy.vercel.app/">
-    <meta name="twitter:title" content="💰 Plateforme de Revenus Complémentaires">
-    <meta name="twitter:description" content="Générez jusqu'à 850€/mois avec le gaming, cashback et plus. Bot crypto automatisé inclus ! 🚀">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&h=630&fit=crop">
-    
-    <!-- LinkedIn Specific -->
-    <meta property="og:image:alt" content="Plateforme de revenus complémentaires avec multiples sources de gains">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+        body { font-family: 'Inter', sans-serif; }
         
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
         
-        .fade-in {
-            animation: fadeIn 0.8s ease-out;
-        }
-        
-        .hover-lift {
-            transition: all 0.3s ease;
-        }
-        
+        .fade-in { animation: fadeIn 0.8s ease-out; }
+        .hover-lift { transition: all 0.3s ease; }
         .hover-lift:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
         
-        .gradient-border {
-            position: relative;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 2px;
-            border-radius: 12px;
-        }
-        
-        .gradient-border-content {
-            background: white;
-            border-radius: 10px;
-        }
-        
-        /* Money Rain Animation */
         .money-rain {
             position: fixed;
             top: 0;
@@ -89,14 +46,8 @@
         }
         
         @keyframes fall {
-            0% {
-                top: -10%;
-                transform: translateX(0) rotate(0deg);
-            }
-            100% {
-                top: 110%;
-                transform: translateX(100px) rotate(360deg);
-            }
+            0% { top: -10%; transform: translateX(0) rotate(0deg); }
+            100% { top: 110%; transform: translateX(100px) rotate(360deg); }
         }
         
         .controls {
@@ -120,16 +71,12 @@
             transition: all 0.3s;
         }
         
-        .controls button:hover {
-            transform: scale(1.05);
-        }
+        .controls button:hover { transform: scale(1.05); }
     </style>
 </head>
 <body class="bg-gradient-to-br from-slate-50 to-slate-100 text-gray-900">
-    <!-- Money Rain Animation -->
     <div class="money-rain" id="moneyRain"></div>
     
-    <!-- Controls -->
     <div class="controls">
         <div class="text-xs font-semibold text-gray-700 mb-2">Animation 💰</div>
         <button onclick="toggleRain()" id="toggleBtn" class="bg-indigo-600 text-white">Pause</button>
@@ -139,7 +86,6 @@
     </div>
     
     <div class="max-w-6xl mx-auto px-4 py-12" style="position: relative; z-index: 10;">
-        <!-- Header Professional -->
         <header class="text-center mb-16 fade-in">
             <div class="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -156,7 +102,6 @@
             </p>
         </header>
 
-        <!-- Statistics Bar -->
         <div class="bg-white rounded-2xl shadow-lg p-8 mb-12 fade-in">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
                 <div>
@@ -172,15 +117,14 @@
                     <p class="text-sm text-gray-600 mt-2">Partages professionnels</p>
                 </div>
                 <div>
-                    <a href="https://money-money-ruddy.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-bold py-3 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg">
+                    <a href="https://bot-trading-complet.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-bold py-3 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg">
                         🤖 Bot Trading Crypto
                     </a>
-                    <p class="text-sm text-gray-600 mt-2">Automatisé & Uphold</p>
+                    <p class="text-sm text-gray-600 mt-2">Automatisé BSC</p>
                 </div>
             </div>
         </div>
 
-        <!-- Crypto Trading Bot Highlight -->
         <div class="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 rounded-2xl p-8 mb-12 shadow-2xl fade-in">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="text-white flex-1">
@@ -190,34 +134,29 @@
                         </div>
                         <h3 class="text-2xl font-bold">Bot de Trading Crypto Automatisé</h3>
                     </div>
-                    <p class="text-white/90 mb-4 text-lg">Profitez d'un bot de trading intelligent pour optimiser vos investissements crypto automatiquement.</p>
+                    <p class="text-white/90 mb-4 text-lg">Profitez d'un bot de trading intelligent pour optimiser vos investissements crypto automatiquement 24/7.</p>
                     <ul class="space-y-2 mb-6">
                         <li class="flex items-center gap-2">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                            <span>Trading automatisé 24/7</span>
+                            <span>Trading automatisé 24/7 sur BSC</span>
                         </li>
                         <li class="flex items-center gap-2">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                            <span>Connexion sécurisée Uphold</span>
+                            <span>Connexion MetaMask sécurisée</span>
                         </li>
                         <li class="flex items-center gap-2">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                            <span>Stratégies intelligentes optimisées</span>
+                            <span>Stop suiveur intelligent intégré</span>
                         </li>
                     </ul>
                 </div>
-                <div class="flex flex-col gap-4">
-                    <a href="#" onclick="alert('🚀 Bot de trading en cours de finalisation ! Disponible très bientôt. Inscrivez-vous pour être notifié du lancement.'); return false;" class="bg-white text-orange-600 hover:bg-gray-50 font-bold text-lg py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-xl text-center whitespace-nowrap">
-                        Accéder au Bot Principal (Bientôt)
-                    </a>
-                    <a href="#" onclick="alert('🚀 Bot de trading en cours de finalisation ! Disponible très bientôt. Inscrivez-vous pour être notifié du lancement.'); return false;" class="bg-white text-orange-600 hover:bg-gray-50 font-bold text-lg py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-xl text-center whitespace-nowrap">
-                        Bot Trading Secondaire (Bientôt)
+                <div>
+                    <a href="https://bot-trading-complet.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white text-orange-600 hover:bg-gray-50 font-bold text-lg py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-xl text-center whitespace-nowrap">
+                        🚀 Accéder au Bot Trading
                     </a>
                 </div>
             </div>
         </div>
-
-        <!-- Features Grid Professional -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 fade-in">
             <!-- Gaming Rémunéré -->
             <div class="bg-white rounded-xl p-6 shadow-md hover-lift">
@@ -240,34 +179,6 @@
                         </div>
                         <svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     </a>
-                    <a href="https://www.skillz.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <span class="font-medium">Skillz</span>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://appstation.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <span class="font-medium">AppStation</span>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://cashemall.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <span class="font-medium">Cash'Em All</span>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://rewardedplay.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <span class="font-medium">Rewarded Play</span>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
                     <a href="https://wewardapp.go.link/1ddeb?label=SereinGrizzly4922" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-indigo-50 px-3 py-2 rounded-lg transition-colors group">
                         <div class="flex items-center gap-2">
                             <svg class="w-4 h-4 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
@@ -285,7 +196,7 @@
                 </div>
             </div>
 
-            <!-- Banques en Ligne -->
+            <!-- Cashback Intelligent -->
             <div class="bg-white rounded-xl p-6 shadow-md hover-lift">
                 <div class="flex items-start gap-4 mb-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -302,162 +213,21 @@
                     <a href="https://fr.igraal.com/parrainage?parrain=AG_5aa764fad8df6" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
                         <div class="flex items-center gap-2 flex-1">
                             <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">iGraal</span>
-                                <span class="text-xs text-gray-500">Leader cashback - Plus de 1700 marchands</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://www.ebuyclub.com/inscription?parrain=Catmonangecm1" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">eBuyClub</span>
-                                <span class="text-xs text-gray-500">Cashback + codes promo - 3000 marchands</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://www.poulpeo.com/p/Mva1ab" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">Poulpeo</span>
-                                <span class="text-xs text-gray-500">Taux élevés - Paiement rapide dès 20€</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://fr.shopping.rakuten.com/offre-parrainage-rakuten/6HWIA585" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">Rakuten</span>
-                                <span class="text-xs text-gray-500">Marketplace + cashback - Bonus bienvenue</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://www.widilo.fr/i/JERCAT" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">Widilo</span>
-                                <span class="text-xs text-gray-500">Cashback voyage - Comparateur intégré</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://dixpourcent.onelink.me/nyS7/auth?sponsorshipCode=X7ZVNE2I&pid=sponsorship&deep_link_value=sponsorship&deep_link_sub1=X7ZVNE2I" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">10% Cash</span>
-                                <span class="text-xs text-gray-500">Taux fixes élevés - Simplicité maximale</span>
-                            </div>
+                            <span class="font-medium">iGraal</span>
                         </div>
                         <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     </a>
                     <a href="https://hellojoko.app.link/tyX38HoTyP" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
                         <div class="flex items-center gap-2 flex-1">
                             <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">Joko</span>
-                                <span class="text-xs text-gray-500">Cashback automatique carte bancaire</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://fr.igraal.com/share-app-market?pid=app-redirect&c=sponsorship&godfather=AG_5aa764fad8df6" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">iGraal Market</span>
-                                <span class="text-xs text-gray-500">Courses en ligne - Livraison + cashback</span>
-                            </div>
+                            <span class="font-medium">Joko</span>
                         </div>
                         <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     </a>
                     <a href="https://www.shopmium.com/fr/referral/di486h" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
                         <div class="flex items-center gap-2 flex-1">
                             <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">Shopmium</span>
-                                <span class="text-xs text-gray-500">Remboursement ticket caisse - Produits gratuits</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://quoty.app/account/personnels" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">Quoty</span>
-                                <span class="text-xs text-gray-500">Comparateur assurances - Économies garanties</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://api.core.fidme.com/liste" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">Fidme</span>
-                                <span class="text-xs text-gray-500">Cartes de fidélité digitales - Toutes en 1 app</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://woolsocks.go.link/hRxwj" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">Woolsocks</span>
-                                <span class="text-xs text-gray-500">Cashback mode - Marques premium lifestyle</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                </div>-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://www.quoty.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">Quoty</span>
-                                <span class="text-xs text-gray-500">Comparateur assurances - Économies garanties</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://www.couponnetwork.fr/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">Coupon Network</span>
-                                <span class="text-xs text-gray-500">Coupons imprimables - Marques alimentaires</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://www.fimecourse.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">Fime Course</span>
-                                <span class="text-xs text-gray-500">Réduction courses scan ticket - Cumul offres</span>
-                            </div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://woolsocks.eu/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2 flex-1">
-                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <div>
-                                <span class="font-medium block">Woolsocks</span>
-                                <span class="text-xs text-gray-500">Cashback mode - Marques premium lifestyle</span>
-                            </div>
+                            <span class="font-medium">Shopmium</span>
                         </div>
                         <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     </a>
@@ -474,7 +244,7 @@
                     </div>
                     <div>
                         <h3 class="text-lg font-semibold text-gray-900 mb-2">Banques en Ligne</h3>
-                        <p class="text-sm text-gray-600 mb-3">Profitez des primes de bienvenue et offres attractives des banques digitales.</p>
+                        <p class="text-sm text-gray-600 mb-3">Profitez des primes de bienvenue et offres attractives.</p>
                     </div>
                 </div>
                 <div class="space-y-2">
@@ -492,20 +262,6 @@
                         </div>
                         <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     </a>
-                    <a href="https://www.hellobank.fr/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-emerald-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <span class="font-medium">Hello bank!</span>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://www.monabanq.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-emerald-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <span class="font-medium">Monabanq</span>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
                 </div>
             </div>
 
@@ -519,7 +275,7 @@
                     </div>
                     <div>
                         <h3 class="text-lg font-semibold text-gray-900 mb-2">Paris Sportifs</h3>
-                        <p class="text-sm text-gray-600 mb-3">Investissez sur vos connaissances sportives avec des cotes compétitives.</p>
+                        <p class="text-sm text-gray-600 mb-3">Investissez sur vos connaissances sportives.</p>
                     </div>
                 </div>
                 <div class="space-y-2">
@@ -537,27 +293,6 @@
                         </div>
                         <svg class="w-4 h-4 text-gray-400 group-hover:text-green-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     </a>
-                    <a href="https://www.unibet.fr/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-green-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <span class="font-medium">Unibet</span>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-green-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://www.parionssport.fdj.fr/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-green-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <span class="font-medium">ParionsSport</span>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-green-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
-                    <a href="https://www.zebet.fr/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-green-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <span class="font-medium">ZEbet</span>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-green-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
                 </div>
             </div>
 
@@ -571,7 +306,7 @@
                     </div>
                     <div>
                         <h3 class="text-lg font-semibold text-gray-900 mb-2">Études Rémunérées</h3>
-                        <p class="text-sm text-gray-600 mb-3">Monétisez votre opinion avec des sondages à forte valeur ajoutée.</p>
+                        <p class="text-sm text-gray-600 mb-3">Monétisez votre opinion avec des sondages.</p>
                     </div>
                 </div>
                 <div class="space-y-2">
@@ -589,509 +324,48 @@
                         </div>
                         <svg class="w-4 h-4 text-gray-400 group-hover:text-purple-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     </a>
-                    <a href="https://gaddin.com/index.php?sponsor=dbf29b103e024f6705f7358acab90e4d" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-sm text-gray-700 bg-gray-50 hover:bg-purple-50 px-3 py-2 rounded-lg transition-colors group">
-                        <div class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
-                            <span class="font-medium">Gaddin</span>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-400 group-hover:text-purple-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    </a>
                 </div>
             </div>
         </div>
-
-        <!-- Main CTA Card -->
+        <!-- Share Section -->
         <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-10 mb-12 shadow-2xl fade-in">
             <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold text-white mb-4">Partagez cette opportunité professionnelle</h2>
+                <h2 class="text-3xl font-bold text-white mb-4">Partagez cette opportunité</h2>
                 <p class="text-indigo-100 text-lg max-w-2xl mx-auto">
-                    Recommandez notre plateforme à votre réseau et contribuez au développement d'une communauté professionnelle engagée.
+                    Recommandez notre plateforme à votre réseau professionnel.
                 </p>
             </div>
             
-            <!-- Generateur de Posts Section -->
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8">
-                <h3 class="text-white font-semibold text-lg mb-4 flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
-                    </svg>
-                    Générateur de Posts - Copiez et Publiez
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-4">
-                    <!-- Post LinkedIn -->
-                    <div class="bg-white rounded-lg p-4">
-                        <div class="flex items-center gap-2 mb-3">
-                            <svg class="w-5 h-5 text-blue-700" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                            <span class="font-semibold text-gray-900">LinkedIn</span>
-                        </div>
-                        <div class="bg-gray-50 p-3 rounded text-sm text-gray-700 mb-3 max-h-32 overflow-y-auto" id="linkedinPost">
-💼 Développez vos revenus complémentaires de manière professionnelle
-
-Je partage aujourd'hui une plateforme complète qui regroupe plusieurs sources de revenus légitimes :
-
-✅ Gaming rémunéré avec tournois
-✅ Cashback intelligent (13 plateformes)
-✅ Bot de trading crypto automatisé
-✅ Banques en ligne avec primes
-✅ Études rémunérées
-
-Potentiel : jusqu'à 850€/mois en revenus complémentaires.
-
-🔗 https://money-money-ruddy.vercel.app/
-
-#RevenusComplementaires #FinancePersonnelle #Investissement
-                        </div>
-                        <button onclick="copyPost('linkedin')" class="w-full bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded-lg font-semibold transition-all">
-                            📋 Copier le post LinkedIn
-                        </button>
-                    </div>
-
-                    <!-- Post Facebook -->
-                    <div class="bg-white rounded-lg p-4">
-                        <div class="flex items-center gap-2 mb-3">
-                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                            <span class="font-semibold text-gray-900">Facebook</span>
-                        </div>
-                        <div class="bg-gray-50 p-3 rounded text-sm text-gray-700 mb-3 max-h-32 overflow-y-auto" id="facebookPost">
-💰 Découvrez comment générer des revenus complémentaires ! 💰
-
-Plateforme tout-en-un avec :
-🎮 Gaming et marche rémunérés (WeWard, Mistplay...)
-💳 Cashback sur vos achats (iGraal, Joko...)
-🤖 Bot de trading crypto automatisé
-🏦 Banques en ligne avec bonus
-📊 Sondages payants
-
-👉 Jusqu'à 850€/mois en complément de revenus !
-
-Tout est centralisé sur une seule plateforme sécurisée.
-
-👇 Accédez maintenant : https://money-money-ruddy.vercel.app/
-                        </div>
-                        <button onclick="copyPost('facebook')" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-semibold transition-all">
-                            📋 Copier le post Facebook
-                        </button>
-                    </div>
-
-                    <!-- Post Twitter -->
-                    <div class="bg-white rounded-lg p-4">
-                        <div class="flex items-center gap-2 mb-3">
-                            <svg class="w-5 h-5 text-sky-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
-                            </svg>
-                            <span class="font-semibold text-gray-900">Twitter/X</span>
-                        </div>
-                        <div class="bg-gray-50 p-3 rounded text-sm text-gray-700 mb-3 max-h-32 overflow-y-auto" id="twitterPost">
-💰 Plateforme de revenus complémentaires 2024
-
-🎮 Gaming rémunéré
-💳 Cashback (13 apps)
-🤖 Bot trading crypto
-🏦 Banques en ligne
-📊 Sondages payés
-
-Potentiel : 850€/mois
-
-🔗 https://money-money-ruddy.vercel.app/
-
-#SideHustle #RevenusPassifs #CryptoBot
-                        </div>
-                        <button onclick="copyPost('twitter')" class="w-full bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 rounded-lg font-semibold transition-all">
-                            📋 Copier le post Twitter
-                        </button>
-                    </div>
-
-                    <!-- Post WhatsApp -->
-                    <div class="bg-white rounded-lg p-4">
-                        <div class="flex items-center gap-2 mb-3">
-                            <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                            </svg>
-                            <span class="font-semibold text-gray-900">WhatsApp</span>
-                        </div>
-                        <div class="bg-gray-50 p-3 rounded text-sm text-gray-700 mb-3 max-h-32 overflow-y-auto" id="whatsappPost">
-👋 Salut !
-
-Je voulais te partager une plateforme que j'ai découverte pour générer des revenus complémentaires 💰
-
-C'est une solution tout-en-un qui regroupe :
-
-🎮 Gaming rémunéré (Mistplay, WeWard...)
-💳 Cashback automatique (13 apps différentes)
-🤖 Bot de trading crypto (automatisé 24/7)
-🏦 Banques en ligne avec bonus
-📊 Sondages rémunérés
-
-Le potentiel est d'environ 850€/mois en cumulant tout.
-
-C'est totalement légal et sécurisé 🔒
-
-Tu peux regarder ici : https://money-money-ruddy.vercel.app/
-
-Dis-moi ce que tu en penses ! 😊
-                        </div>
-                        <button onclick="copyPost('whatsapp')" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg font-semibold transition-all">
-                            📋 Copier le message WhatsApp
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Share Buttons Professional -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8 max-w-3xl mx-auto">
                 <button onclick="shareOn('linkedin')" class="bg-white text-gray-800 hover:bg-gray-50 py-4 px-6 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 shadow-md">
-                    <svg class="w-5 h-5 text-blue-700" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
                     LinkedIn
                 </button>
-                
                 <button onclick="shareOn('twitter')" class="bg-white text-gray-800 hover:bg-gray-50 py-4 px-6 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 shadow-md">
-                    <svg class="w-5 h-5 text-sky-500" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
-                    </svg>
                     Twitter
                 </button>
-                
                 <button onclick="shareOn('facebook')" class="bg-white text-gray-800 hover:bg-gray-50 py-4 px-6 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 shadow-md">
-                    <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                    </svg>
                     Facebook
                 </button>
-                
                 <button onclick="shareOn('whatsapp')" class="bg-white text-gray-800 hover:bg-gray-50 py-4 px-6 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 shadow-md">
-                    <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                    </svg>
                     WhatsApp
                 </button>
-                
                 <button onclick="shareOn('telegram')" class="bg-white text-gray-800 hover:bg-gray-50 py-4 px-6 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 shadow-md">
-                    <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                    </svg>
                     Telegram
                 </button>
-                
                 <button onclick="copyLink()" id="copyBtn" class="bg-white text-gray-800 hover:bg-gray-50 py-4 px-6 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 shadow-md">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                    </svg>
                     <span id="copyText">Copier le lien</span>
                 </button>
             </div>
 
-            <!-- Link Display -->
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
-                <p class="text-sm text-indigo-100 mb-2">URL de référence professionnelle</p>
+                <p class="text-sm text-indigo-100 mb-2">URL de référence</p>
                 <p class="font-mono text-white text-sm md:text-base break-all">https://money-money-ruddy.vercel.app/</p>
-            </div>
-        </div>
-
-        <!-- QR Code Section Professional -->
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-            <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Accès Mobile Rapide</h3>
-                <div class="bg-gray-50 p-6 rounded-xl inline-block mb-4">
-                    <img 
-                        src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://money-money-ruddy.vercel.app/"
-                        alt="QR Code"
-                        class="w-56 h-56 mx-auto"
-                    />
-                </div>
-                <p class="text-gray-600">Scannez pour accéder instantanément à la plateforme</p>
-            </div>
-
-            <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 shadow-lg">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6">Avantages Professionnels</h3>
-                <ul class="space-y-4">
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <div>
-                            <p class="font-semibold text-gray-900">Interface Intuitive</p>
-                            <p class="text-sm text-gray-600">Navigation optimisée pour tous profils</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <div>
-                            <p class="font-semibold text-gray-900">Paiements Sécurisés</p>
-                            <p class="text-sm text-gray-600">Transactions cryptées et rapides</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <div>
-                            <p class="font-semibold text-gray-900">Support Dédié</p>
-                            <p class="text-sm text-gray-600">Assistance 24/7 pour tous utilisateurs</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Community Chat Section -->
-        <div class="bg-white rounded-2xl p-8 mb-12 shadow-lg fade-in">
-            <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold text-gray-900 mb-3">💬 Discussion Communautaire</h2>
-                <p class="text-gray-600">Posez vos questions, partagez vos astuces et entraidez-vous avec la communauté</p>
-            </div>
-
-            <div class="max-w-4xl mx-auto">
-                <!-- Stats Community -->
-                <div class="grid grid-cols-3 gap-4 mb-6">
-                    <div class="bg-indigo-50 rounded-lg p-4 text-center">
-                        <p class="text-2xl font-bold text-indigo-600" id="onlineUsers">247</p>
-                        <p class="text-xs text-gray-600">En ligne</p>
-                    </div>
-                    <div class="bg-purple-50 rounded-lg p-4 text-center">
-                        <p class="text-2xl font-bold text-purple-600" id="totalMessages">0</p>
-                        <p class="text-xs text-gray-600">Messages</p>
-                    </div>
-                    <div class="bg-blue-50 rounded-lg p-4 text-center">
-                        <p class="text-2xl font-bold text-blue-600">4.8⭐</p>
-                        <p class="text-xs text-gray-600">Note globale</p>
-                    </div>
-                </div>
-
-                <!-- Chat Container -->
-                <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border-2 border-gray-200">
-                    <!-- Messages Display -->
-                    <div id="chatMessages" class="bg-white rounded-lg p-4 mb-4 h-96 overflow-y-auto space-y-3 shadow-inner">
-                        <div class="text-center text-gray-400 text-sm py-8">
-                            <svg class="w-12 h-12 mx-auto mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-                            </svg>
-                            <p>Chargement des messages...</p>
-                        </div>
-                    </div>
-
-                    <!-- Input Area -->
-                    <div class="space-y-3">
-                        <div class="flex gap-2">
-                            <input 
-                                type="text" 
-                                id="userName" 
-                                placeholder="Votre pseudo..." 
-                                maxlength="20"
-                                class="flex-1 px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-indigo-500 focus:outline-none transition-colors"
-                            />
-                            <select id="userAvatar" class="px-3 py-3 rounded-lg border-2 border-gray-300 focus:border-indigo-500 focus:outline-none">
-                                <option value="👤">👤</option>
-                                <option value="😊">😊</option>
-                                <option value="🎮">🎮</option>
-                                <option value="💰">💰</option>
-                                <option value="🚀">🚀</option>
-                                <option value="⭐">⭐</option>
-                                <option value="💎">💎</option>
-                                <option value="🔥">🔥</option>
-                            </select>
-                        </div>
-                        
-                        <div class="flex gap-2">
-                            <input 
-                                type="text" 
-                                id="messageInput" 
-                                placeholder="Votre message (max 200 caractères)..." 
-                                maxlength="200"
-                                class="flex-1 px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-indigo-500 focus:outline-none transition-colors"
-                                onkeypress="if(event.key==='Enter') sendMessage()"
-                            />
-                            <button 
-                                onclick="sendMessage()" 
-                                class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center gap-2 shadow-lg"
-                            >
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
-                                </svg>
-                                Envoyer
-                            </button>
-                        </div>
-
-                        <div class="flex items-center justify-between text-xs text-gray-500">
-                            <p>💡 Soyez respectueux et entraidez-vous !</p>
-                            <p id="charCount">0/200</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Quick Tips -->
-                <div class="mt-6 grid md:grid-cols-3 gap-4">
-                    <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                        <p class="font-semibold text-green-800 text-sm mb-1">💡 Astuce</p>
-                        <p class="text-xs text-green-700">Combinez WeWard + Macadam pour maximiser vos gains en marchant !</p>
-                    </div>
-                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-                        <p class="font-semibold text-blue-800 text-sm mb-1">🎯 Conseil</p>
-                        <p class="text-xs text-blue-700">Activez les notifications de Shopmium pour ne rater aucune offre gratuite.</p>
-                    </div>
-                    <div class="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
-                        <p class="font-semibold text-purple-800 text-sm mb-1">⚡ Info</p>
-                        <p class="text-xs text-purple-700">Le bot crypto fonctionne 24/7. Commencez avec un petit montant test !</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Testimonials Section -->
-        <div class="bg-white rounded-2xl p-8 mb-12 shadow-lg fade-in">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold text-gray-900 mb-3">Ils ont testé et approuvé</h2>
-                <p class="text-gray-600">Découvrez les retours d'expérience de nos utilisateurs</p>
-                <div class="flex items-center justify-center gap-1 mt-4">
-                    <span class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</span>
-                    <span class="ml-2 text-gray-700 font-semibold">4.8/5</span>
-                    <span class="text-gray-500 text-sm ml-1">(2,847 avis)</span>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Avis 1 -->
-                <div class="bg-gradient-to-br from-indigo-50 to-white p-6 rounded-xl border border-indigo-100 hover:shadow-lg transition-all">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            M
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900">Marie D.</p>
-                            <div class="flex text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 text-sm mb-3">
-                        "J'ai commencé avec le cashback et WeWard. En 3 mois, j'ai déjà récupéré <strong>420€</strong> ! Le bot crypto est un vrai plus, très simple à configurer."
-                    </p>
-                    <p class="text-xs text-gray-500">Il y a 2 semaines</p>
-                </div>
-
-                <!-- Avis 2 -->
-                <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border border-purple-100 hover:shadow-lg transition-all">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            T
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900">Thomas L.</p>
-                            <div class="flex text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 text-sm mb-3">
-                        "Parfait pour arrondir les fins de mois ! Entre les sondages et les apps de gaming, je gagne facilement <strong>200-300€/mois</strong>. Tout est centralisé, c'est top !"
-                    </p>
-                    <p class="text-xs text-gray-500">Il y a 1 semaine</p>
-                </div>
-
-                <!-- Avis 3 -->
-                <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-blue-100 hover:shadow-lg transition-all">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            S
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900">Sophie R.</p>
-                            <div class="flex text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 text-sm mb-3">
-                        "Le fait d'avoir tout regroupé est génial ! J'utilise surtout iGraal, Joko et Shopmium. Mon record : <strong>680€ en un mois</strong> avec les primes de bienvenue des banques."
-                    </p>
-                    <p class="text-xs text-gray-500">Il y a 3 jours</p>
-                </div>
-
-                <!-- Avis 4 -->
-                <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100 hover:shadow-lg transition-all">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            A
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900">Alexandre P.</p>
-                            <div class="flex text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 text-sm mb-3">
-                        "Sceptique au début, mais les résultats sont là ! Le bot crypto m'a fait gagner <strong>8%</strong> ce mois-ci. Les paris sportifs aussi quand on s'y connaît. Je recommande !"
-                    </p>
-                    <p class="text-xs text-gray-500">Il y a 5 jours</p>
-                </div>
-
-                <!-- Avis 5 -->
-                <div class="bg-gradient-to-br from-amber-50 to-white p-6 rounded-xl border border-amber-100 hover:shadow-lg transition-all">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            C
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900">Céline M.</p>
-                            <div class="flex text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 text-sm mb-3">
-                        "Super pour les étudiants ! Avec WeWard, je me fais <strong>50€/mois</strong> juste en marchant vers la fac. Plus les sondages pendant les pauses. Facile et sans effort."
-                    </p>
-                    <p class="text-xs text-gray-500">Il y a 1 semaine</p>
-                </div>
-
-                <!-- Avis 6 -->
-                <div class="bg-gradient-to-br from-rose-50 to-white p-6 rounded-xl border border-rose-100 hover:shadow-lg transition-all">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-rose-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            J
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900">Julien B.</p>
-                            <div class="flex text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 text-sm mb-3">
-                        "Interface claire, tout est bien expliqué. J'ai commencé doucement avec le cashback et maintenant j'utilise presque tout. Revenu mensuel moyen : <strong>550€</strong>. Merci !"
-                    </p>
-                    <p class="text-xs text-gray-500">Il y a 4 jours</p>
-                </div>
-            </div>
-
-            <!-- Trust Indicators -->
-            <div class="mt-10 pt-8 border-t border-gray-200">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                    <div>
-                        <p class="text-3xl font-bold text-indigo-600">98%</p>
-                        <p class="text-sm text-gray-600 mt-1">Satisfaction client</p>
-                    </div>
-                    <div>
-                        <p class="text-3xl font-bold text-purple-600">15k+</p>
-                        <p class="text-sm text-gray-600 mt-1">Utilisateurs actifs</p>
-                    </div>
-                    <div>
-                        <p class="text-3xl font-bold text-blue-600">2.8M€</p>
-                        <p class="text-sm text-gray-600 mt-1">Gains distribués</p>
-                    </div>
-                    <div>
-                        <p class="text-3xl font-bold text-green-600">24/7</p>
-                        <p class="text-sm text-gray-600 mt-1">Support disponible</p>
-                    </div>
-                </div>
             </div>
         </div>
 
         <!-- Final CTA -->
         <div class="text-center fade-in">
-            <a
-                href="https://money-money-ruddy.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold text-lg py-4 px-10 rounded-xl transition-all shadow-xl hover:shadow-2xl"
-            >
+            <a href="https://money-money-ruddy.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold text-lg py-4 px-10 rounded-xl transition-all shadow-xl hover:shadow-2xl">
                 Accéder à la plateforme
                 <svg class="inline-block w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
@@ -1109,34 +383,22 @@ Dis-moi ce que tu en penses ! 😊
         let rainSpeed = 'normal';
         const moneySymbols = ['💰', '💵', '💴', '💶', '💷', '💸', '🤑'];
 
-        // Money Rain Functions
         function createMoney() {
             if (!rainActive) return;
-            
             const money = document.createElement('div');
             money.className = 'money';
             money.textContent = moneySymbols[Math.floor(Math.random() * moneySymbols.length)];
             money.style.left = Math.random() * 100 + '%';
-            
-            let duration;
-            switch(rainSpeed) {
-                case 'slow': duration = 15; break;
-                case 'fast': duration = 5; break;
-                default: duration = 10;
-            }
-            
+            let duration = rainSpeed === 'slow' ? 15 : rainSpeed === 'fast' ? 5 : 10;
             money.style.animationDuration = duration + 's';
             document.getElementById('moneyRain').appendChild(money);
-            
             setTimeout(() => money.remove(), duration * 1000);
         }
 
         function toggleRain() {
             rainActive = !rainActive;
             document.getElementById('toggleBtn').textContent = rainActive ? 'Pause' : 'Play';
-            if (rainActive) {
-                startRain();
-            }
+            if (rainActive) startRain();
         }
 
         function changeSpeed(speed) {
@@ -1149,37 +411,6 @@ Dis-moi ce que tu en penses ! 😊
             }, 300);
         }
 
-        // Load stats
-        async function loadStats() {
-            try {
-                const result = await window.storage.get('share_stats');
-                if (result) {
-                    const stats = JSON.parse(result.value);
-                    shareCount = stats.shares || 0;
-                    document.getElementById('shareCount').textContent = shareCount;
-                }
-            } catch (error) {
-                shareCount = 0;
-            }
-        }
-
-        // Save stats
-        async function saveStats() {
-            try {
-                await window.storage.set('share_stats', JSON.stringify({ shares: shareCount }));
-            } catch (error) {
-                console.log('Could not save stats');
-            }
-        }
-
-        // Increment shares
-        function incrementShares() {
-            shareCount++;
-            document.getElementById('shareCount').textContent = shareCount;
-            saveStats();
-        }
-
-        // Animate earnings counter
         function animateEarnings() {
             if (currentEarnings < targetEarnings) {
                 currentEarnings += Math.ceil((targetEarnings - currentEarnings) / 20);
@@ -1190,36 +421,27 @@ Dis-moi ce que tu en penses ! 😊
             }
         }
 
-        // Share messages
-        const shareMessages = {
-            default: "Découvrez une plateforme professionnelle de revenus complémentaires : gaming, cashback, paris sportifs et études rémunérées.",
-            linkedin: "Je recommande cette plateforme complète pour générer des revenus complémentaires de manière professionnelle et sécurisée.",
-            twitter: "Plateforme professionnelle de revenus en ligne : gaming, cashback, paris sportifs, sondages rémunérés.",
-            facebook: "Découvrez comment optimiser vos revenus en ligne avec une plateforme complète et sécurisée.",
-        };
-
         function shareOn(platform) {
-            incrementShares();
+            shareCount++;
+            document.getElementById('shareCount').textContent = shareCount;
             let shareUrl = '';
-            
             switch(platform) {
                 case 'facebook':
                     shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(siteUrl)}`;
                     break;
                 case 'twitter':
-                    shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareMessages.twitter)}&url=${encodeURIComponent(siteUrl)}`;
+                    shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(siteUrl)}`;
                     break;
                 case 'whatsapp':
-                    shareUrl = `https://wa.me/?text=${encodeURIComponent(shareMessages.default + ' ' + siteUrl)}`;
+                    shareUrl = `https://wa.me/?text=${encodeURIComponent(siteUrl)}`;
                     break;
                 case 'telegram':
-                    shareUrl = `https://t.me/share/url?url=${encodeURIComponent(siteUrl)}&text=${encodeURIComponent(shareMessages.default)}`;
+                    shareUrl = `https://t.me/share/url?url=${encodeURIComponent(siteUrl)}`;
                     break;
                 case 'linkedin':
                     shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(siteUrl)}`;
                     break;
             }
-            
             window.open(shareUrl, '_blank', 'width=600,height=400');
         }
 
@@ -1227,222 +449,12 @@ Dis-moi ce que tu en penses ! 😊
             navigator.clipboard.writeText(siteUrl).then(() => {
                 const btn = document.getElementById('copyText');
                 btn.textContent = 'Copié !';
-                setTimeout(() => {
-                    btn.textContent = 'Copier le lien';
-                }, 2000);
+                setTimeout(() => { btn.textContent = 'Copier le lien'; }, 2000);
             });
         }
 
-        // Copy post function
-        function copyPost(platform) {
-            let postText = '';
-            
-            switch(platform) {
-                case 'linkedin':
-                    postText = document.getElementById('linkedinPost').textContent.trim();
-                    break;
-                case 'facebook':
-                    postText = document.getElementById('facebookPost').textContent.trim();
-                    break;
-                case 'twitter':
-                    postText = document.getElementById('twitterPost').textContent.trim();
-                    break;
-                case 'whatsapp':
-                    postText = document.getElementById('whatsappPost').textContent.trim();
-                    break;
-            }
-            
-            navigator.clipboard.writeText(postText).then(() => {
-                // Find the button that was clicked
-                const buttons = document.querySelectorAll('button');
-                buttons.forEach(btn => {
-                    if (btn.onclick && btn.onclick.toString().includes(platform)) {
-                        const originalText = btn.innerHTML;
-                        btn.innerHTML = '✅ Copié ! Collez sur ' + platform.charAt(0).toUpperCase() + platform.slice(1);
-                        btn.classList.add('bg-green-600');
-                        setTimeout(() => {
-                            btn.innerHTML = originalText;
-                            btn.classList.remove('bg-green-600');
-                        }, 3000);
-                    }
-                });
-                
-                incrementShares();
-            }).catch(err => {
-                alert('Erreur lors de la copie. Veuillez sélectionner et copier manuellement.');
-            });
-        }
-
-        // Chat System
-        let messages = [];
-        let lastLoadTime = 0;
-
-        // Load messages from storage
-        async function loadMessages() {
-            try {
-                const result = await window.storage.list('msg:', true);
-                if (result && result.keys) {
-                    messages = [];
-                    
-                    // Load all messages
-                    for (const key of result.keys) {
-                        try {
-                            const msgResult = await window.storage.get(key, true);
-                            if (msgResult && msgResult.value) {
-                                const msg = JSON.parse(msgResult.value);
-                                messages.push(msg);
-                            }
-                        } catch (e) {
-                            console.log('Error loading message:', e);
-                        }
-                    }
-                    
-                    // Sort by timestamp
-                    messages.sort((a, b) => a.timestamp - b.timestamp);
-                    
-                    // Keep only last 50 messages
-                    if (messages.length > 50) {
-                        messages = messages.slice(-50);
-                    }
-                    
-                    displayMessages();
-                    updateMessageCount();
-                }
-            } catch (error) {
-                console.log('Error loading messages:', error);
-                displayMessages();
-            }
-        }
-
-        // Display messages
-        function displayMessages() {
-            const container = document.getElementById('chatMessages');
-            
-            if (messages.length === 0) {
-                container.innerHTML = `
-                    <div class="text-center text-gray-400 text-sm py-8">
-                        <svg class="w-12 h-12 mx-auto mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-                        </svg>
-                        <p>Soyez le premier à démarrer la conversation !</p>
-                    </div>
-                `;
-                return;
-            }
-            
-            container.innerHTML = messages.map(msg => {
-                const time = new Date(msg.timestamp);
-                const timeStr = time.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
-                
-                return `
-                    <div class="flex gap-3 hover:bg-gray-50 p-2 rounded-lg transition-colors">
-                        <div class="text-2xl flex-shrink-0">${msg.avatar}</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-baseline gap-2 mb-1">
-                                <span class="font-semibold text-gray-900 text-sm">${escapeHtml(msg.name)}</span>
-                                <span class="text-xs text-gray-400">${timeStr}</span>
-                            </div>
-                            <p class="text-gray-700 text-sm break-words">${escapeHtml(msg.message)}</p>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-            
-            // Auto scroll to bottom
-            container.scrollTop = container.scrollHeight;
-        }
-
-        // Send message
-        async function sendMessage() {
-            const nameInput = document.getElementById('userName');
-            const messageInput = document.getElementById('messageInput');
-            const avatarSelect = document.getElementById('userAvatar');
-            
-            const name = nameInput.value.trim();
-            const message = messageInput.value.trim();
-            const avatar = avatarSelect.value;
-            
-            if (!name) {
-                alert('Veuillez entrer votre pseudo');
-                nameInput.focus();
-                return;
-            }
-            
-            if (!message) {
-                alert('Veuillez entrer un message');
-                messageInput.focus();
-                return;
-            }
-            
-            // Create message object
-            const newMessage = {
-                name: name,
-                message: message,
-                avatar: avatar,
-                timestamp: Date.now()
-            };
-            
-            try {
-                // Save to storage with unique key
-                const messageKey = `msg:${newMessage.timestamp}`;
-                await window.storage.set(messageKey, JSON.stringify(newMessage), true);
-                
-                // Add to local array
-                messages.push(newMessage);
-                
-                // Keep only last 50
-                if (messages.length > 50) {
-                    messages = messages.slice(-50);
-                }
-                
-                // Clear input
-                messageInput.value = '';
-                document.getElementById('charCount').textContent = '0/200';
-                
-                // Display
-                displayMessages();
-                updateMessageCount();
-                
-            } catch (error) {
-                alert('Erreur lors de l\'envoi du message. Veuillez réessayer.');
-                console.error('Error sending message:', error);
-            }
-        }
-
-        // Update message count
-        function updateMessageCount() {
-            document.getElementById('totalMessages').textContent = messages.length;
-        }
-
-        // Character count
-        document.getElementById('messageInput')?.addEventListener('input', function() {
-            document.getElementById('charCount').textContent = this.value.length + '/200';
-        });
-
-        // Escape HTML to prevent XSS
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-
-        // Refresh messages every 5 seconds
-        setInterval(() => {
-            loadMessages();
-        }, 5000);
-
-        // Simulate online users (random fluctuation)
-        setInterval(() => {
-            const base = 247;
-            const variation = Math.floor(Math.random() * 20) - 10;
-            document.getElementById('onlineUsers').textContent = base + variation;
-        }, 8000);
-
-        // Initialize
-        loadStats();
         animateEarnings();
         startRain();
-        loadMessages();
     </script>
 </body>
 </html>
