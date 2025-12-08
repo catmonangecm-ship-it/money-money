@@ -17,7 +17,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; transition: background-color 0.3s ease, color 0.3s ease; }
+        
+        /* Dark Mode Styles */
+        body.dark-mode { background: linear-gradient(to bottom right, #0f172a, #1e293b); color: #e2e8f0; }
+        body.dark-mode .bg-white { background-color: #1e293b !important; }
+        body.dark-mode .bg-slate-50 { background-color: #0f172a !important; }
+        body.dark-mode .service-card { background-color: #1e293b !important; border-color: #334155 !important; }
+        body.dark-mode .service-card:hover { border-color: #3b82f6 !important; }
+        body.dark-mode .text-slate-900 { color: #f1f5f9 !important; }
+        body.dark-mode .text-slate-700 { color: #cbd5e1 !important; }
+        body.dark-mode .text-slate-600 { color: #94a3b8 !important; }
+        body.dark-mode .text-slate-500 { color: #64748b !important; }
+        body.dark-mode .bg-slate-100 { background-color: #334155 !important; }
+        body.dark-mode .bg-slate-50 { background-color: #1e293b !important; }
+        body.dark-mode .bg-blue-50 { background-color: #1e3a8a !important; }
+        body.dark-mode .category-header { background: linear-gradient(to right, #1e293b, #334155) !important; }
+        body.dark-mode .partner-link:hover { background-color: #1e3a8a !important; }
+        body.dark-mode .border-slate-200 { border-color: #334155 !important; }
+        body.dark-mode .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) !important; }
+        body.dark-mode .bg-gradient-to-r { background: linear-gradient(to right, #1e293b, #334155) !important; }
+        
+        .dark-mode-toggle { 
+            cursor: pointer; 
+            transition: all 0.3s ease; 
+            display: flex; 
+            align-items: center; 
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            background-color: #f1f5f9;
+        }
+        body.dark-mode .dark-mode-toggle { background-color: #334155; }
+        .dark-mode-toggle:hover { transform: scale(1.05); }
         .section-title { 
             font-size: 1.875rem; 
             font-weight: 700; 
@@ -77,9 +109,17 @@
                     <p class="text-xs text-slate-500">Solutions Professionnelles</p>
                 </div>
             </div>
-            <a href="https://eco-systeme-jercat-five.vercel.app/" target="_blank" class="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold text-sm transition-colors">
-                Accéder à la plateforme
-            </a>
+            <div class="flex items-center gap-3">
+                <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+                    <svg id="darkModeIcon" class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                    </svg>
+                    <span id="darkModeText" class="text-sm font-semibold text-slate-700 hidden md:inline">Dark</span>
+                </div>
+                <a href="https://eco-systeme-jercat-five.vercel.app/" target="_blank" class="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold text-sm transition-colors">
+                    Accéder à la plateforme
+                </a>
+            </div>
         </div>
     </header>
 
@@ -470,6 +510,34 @@
                 btn.textContent = 'Copié !';
                 setTimeout(() => { btn.textContent = 'Copier'; }, 2000);
             });
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            
+            // Sauvegarder la préférence
+            localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+            
+            // Changer l'icône
+            const icon = document.getElementById('darkModeIcon');
+            const text = document.getElementById('darkModeText');
+            if (isDark) {
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>';
+                text.textContent = 'Light';
+            } else {
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>';
+                text.textContent = 'Dark';
+            }
+        }
+
+        // Charger la préférence au démarrage
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            const icon = document.getElementById('darkModeIcon');
+            const text = document.getElementById('darkModeText');
+            icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>';
+            text.textContent = 'Light';
         }
 
         animateEarnings();
